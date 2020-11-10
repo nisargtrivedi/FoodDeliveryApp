@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:alpha="0.9"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginBottom="-40dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/loginFrm"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_margin="@dimen/height_20"
+        android:layout_below="@id/logo"
+        android:background="@drawable/white_curve_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kukdudelivery.util.TTextView
+            android:text="Login With OTP"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/txtPhone"
+            android:hint="Mobile No"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/login_edit_text_color"
+            android:textColor="@color/login_edit_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/btnGo"
+            android:layout_marginTop="@dimen/twenty_margin"
+            android:textSize="@dimen/font_size_sixteen"
+            android:gravity="center"
+            android:text="Go"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_curve_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+    </LinearLayout>
+
+</RelativeLayout>

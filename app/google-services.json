@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "882507307228",
+    "firebase_url": "https://kukdudeliveryapp.firebaseio.com",
+    "project_id": "kukdudeliveryapp",
+    "storage_bucket": "kukdudeliveryapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882507307228:android:b722168fd772e9dd",
+        "android_client_info": {
+          "package_name": "com.kukdudelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882507307228-kji9p0kbuitmas97kofokepinbhfvu71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUNy9Rk6gDJUBf0zhdPcJJ0cAP1b1b9To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882507307228-kji9p0kbuitmas97kofokepinbhfvu71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

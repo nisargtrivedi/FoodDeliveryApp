@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_menu"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_50"
+    android:background="#fff"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_dashboard"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_twelve" />
+
+        <ImageView
+            android:id="@+id/ic_recent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_order"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home_normal"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ic_past"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_past_order"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ic_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:weightSum="5">
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/tvhome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dashboard"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_ten"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/tvRecent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Recent"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_ten"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/tvDelivered"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Delivered"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_ten"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/tvAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="account"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_ten"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>

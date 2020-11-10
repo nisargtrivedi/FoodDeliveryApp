@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/height_10">
+
+    <TextView
+        android:id="@+id/txtOrderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_30"
+        android:layout_marginTop="@dimen/height_10"
+        android:background="@color/Order_cash"
+        android:fontFamily="@font/arial_semi"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/height_10"
+        android:paddingRight="@dimen/height_10"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_thirteen"
+        tools:text="PAID VIA CASH" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_40"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:drawableStart="@drawable/calendar_ic"
+        android:drawablePadding="@dimen/height_5"
+        android:fontFamily="@font/arial_reg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/Order_date"
+        android:textSize="@dimen/font_size_thirteen"
+        tools:text="20march2019" />
+
+    <TextView
+        android:id="@+id/txtOrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderStatus"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:fontFamily="@font/arial_reg"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/height_10"
+        android:paddingEnd="@dimen/height_10"
+        android:textColor="@color/Order_no"
+        android:textSize="@dimen/font_size_thirteen"
+        tools:text="#123" />
+
+    <TextView
+        android:id="@+id/txtOrderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginEnd="@dimen/height_10"
+        android:fontFamily="@font/arial_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/Order_button"
+        android:textSize="@dimen/font_size_thirteen"
+        tools:text="250" />
+
+    <TextView
+        android:id="@+id/txtVendorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrderNo"
+        android:layout_marginStart="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_5"
+        android:fontFamily="@font/arial_reg"
+        android:includeFontPadding="false"
+        android:textColor="@color/Order_button"
+        android:textSize="@dimen/font_size_thirteen"
+        tools:text="abc" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginEnd="@dimen/height_10"
+        android:background="@color/Order_cash"
+        android:fontFamily="@font/arial_semi"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_twelve"
+        android:visibility="gone"
+        tools:text="area name" />
+
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVendorName"
+        android:layout_marginStart="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginEnd="@dimen/height_10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_5"
+            android:fontFamily="@font/arial_reg"
+            android:includeFontPadding="false"
+            android:text="@string/order_date"
+            android:textColor="@color/Order_address"
+            android:textSize="@dimen/font_size_eleven" />
+
+        <TextView
+            android:id="@+id/txtDeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_5"
+            android:fontFamily="@font/arial_reg"
+            android:includeFontPadding="false"
+            android:text="@string/delivered_date"
+            android:textColor="@color/Order_address"
+            android:textSize="@dimen/font_size_eleven" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/height_10"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/height_10"
+            android:background="#C7C7C7" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPay"
+        style="@style/regular_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignTop="@+id/llBottom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/height_10"
+        android:backgroundTint="@color/red_theme_color"
+        android:gravity="center"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:text="@string/pay_now"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtPaidVia"
+        style="@style/medium_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/llBottom"
+        android:layout_alignBottom="@+id/llBottom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/height_10"
+        android:gravity="center"
+        android:text="@string/pay_now"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone" />
+
+</RelativeLayout>

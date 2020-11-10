@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/height_10"
+        android:text="welcome"
+        android:textColor="#535353"
+        android:textSize="@dimen/font_size_thirteen" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/explore"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:layout_toStartOf="@+id/help"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawablePadding="@dimen/_2sdp"
+        android:gravity="center_vertical"
+        android:text="Explore"
+        android:textColor="#D82B2F"
+        android:textSize="@dimen/font_size_thirteen"
+        android:textStyle="italic" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:gravity="center"
+        android:text="HELP"
+        android:textColor="#D82B2F"
+        android:textSize="@dimen/font_size_thirteen"
+        android:textStyle="italic" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/ordermsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginStart="@dimen/height_10"
+        android:text="Recent Orders"
+        android:textColor="#555555"
+        android:textSize="@dimen/font_size_twelve" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/tvTotalOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/height_10"
+        android:gravity="center"
+        android:text="0 orders"
+        android:textColor="#D82B2F"
+        android:textSize="@dimen/font_size_twelve"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/llOrderSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalOrder"
+        android:layout_marginStart="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_accent_border"
+            android:fontFamily="@font/arial_reg"
+            android:gravity="center_vertical"
+            android:hint="@string/search_by_order_no"
+            android:imeOptions="actionSearch"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/txtGo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_weight="0.2"
+            android:background="#D82B2F"
+            android:fontFamily="@font/arial_reg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/go"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDateFilter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/llOrderSearch"
+        android:layout_marginStart="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spPaymentType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/spinner_back_border"
+            android:overlapAnchor="false"
+            android:text=""
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_accent_border"
+            android:drawableStart="@drawable/calendar_ic"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/arial_reg"
+            android:hint="@string/select_date"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_7sdp"
+            android:textColor="#535353"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/txtClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_weight="0.2"
+            android:background="#D82B2F"
+            android:fontFamily="@font/arial_reg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/clear"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/noorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_menu"
+        android:layout_below="@id/llDateFilter"
+        android:gravity="center"
+        android:text="No Order Found"
+        android:textColor="@color/Order_no"
+        android:textSize="@dimen/font_size_sixteen"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvORders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_menu"
+        android:layout_below="@id/llDateFilter"
+        android:layout_marginTop="@dimen/height_10"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/round_logo"
+        android:translationZ="10dp" />
+
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

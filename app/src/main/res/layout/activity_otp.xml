@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/otplogo"
+        android:layout_marginTop="@dimen/twenty_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otp" />
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/verify"
+        android:textSize="@dimen/font_size_twenty"
+        android:layout_below="@id/otplogo"
+        android:text="Verify OTP"
+        android:gravity="center"
+        android:textColor="@color/login_new_account_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/text"
+        android:textSize="@dimen/font_size_seventeen"
+        android:layout_below="@id/verify"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="We have sent an OTP on your number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/PhoneTv"
+        android:textSize="@dimen/font_size_seventeen"
+        android:layout_below="@id/text"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/otpll"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_below="@id/PhoneTv"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/Ed1"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_margin"
+            android:gravity="center"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/Ed2"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_margin"
+            android:gravity="center"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/Ed3"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_margin"
+            android:gravity="center"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/Ed4"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_margin"
+            android:gravity="center"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="1"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+
+    </LinearLayout>
+    <com.kukdudelivery.util.TTextView
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_below="@id/otpll"
+        android:id="@+id/Verify"
+        android:layout_marginTop="@dimen/twenty_margin"
+        android:textSize="@dimen/font_size_sixteen"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_curve_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50" />
+    <com.kukdudelivery.util.TTextView
+        android:textStyle="bold"
+        android:id="@+id/btnResendOTP"
+        android:layout_marginRight="@dimen/twenty_margin"
+        android:layout_marginLeft="@dimen/twenty_margin"
+        android:layout_below="@id/Verify"
+        android:layout_marginTop="@dimen/twenty_margin"
+        android:textSize="@dimen/font_size_sixteen"
+        android:gravity="center"
+        android:text="Resend OTP ?"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50" />
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="login_edit_text_color">#666666</color>
+    <color name="login_button_color">#D82B2F</color>
+    <color name="login_or_color">#333333</color>
+    <color name="login_with_fb_color">#475993</color>
+    <color name="login_new_account_color">#FBBF1D</color>
+    <color name="back_color">#F7F7F8</color>
+    <color name="background_color">#FFFAFAFA</color>
+    <color name="searhc_border">#d1d1d1</color>
+    <color name="edit_text_color">#555555</color>
+    <color name="white">#ffffff</color>
+    <color name="LightGreen">#66CC00</color>
+    <color name="green">#019532</color>
+    <!--Delivery Person Colors-->
+    <color name="Order_cash">#E8A402</color>
+    <color name="Order_button">#D82B2F</color>
+    <color name="Order_no">#333333</color>
+    <color name="Order_address">#777777</color>
+    <color name="Order_mobile">#777777</color>
+    <color name="Order_delivery_slot">#707070</color>
+    <color name="Order_date">#777777</color>
+
+    <color name="field_color">#2E2E2E</color>
+
+    <color name="hint_color">#818181</color>
+    <color name="red_theme_color">#D82B2F</color>
+    <color name="link_color">#0000EE</color>
+</resources>

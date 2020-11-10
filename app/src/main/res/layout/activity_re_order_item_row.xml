@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingTop="@dimen/height_10"
+    android:paddingBottom="@dimen/height_10">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/ItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text=""
+            android:textColor="#333333"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/VendorName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#777777"
+            android:textSize="@dimen/font_size_thirteen"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/ll1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.kukdudelivery.util.TTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weight:"
+            android:textColor="#777777"
+            android:textSize="@dimen/font_size_eleven" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/Weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity:"
+            android:textColor="#777777"
+            android:textSize="@dimen/font_size_eleven" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/Qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_twelve"
+            android:textStyle="italic" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/Price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible"
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_twelve" />
+    </LinearLayout>
+</RelativeLayout>

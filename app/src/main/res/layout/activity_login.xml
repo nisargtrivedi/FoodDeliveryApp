@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:alpha="0.9"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginBottom="-40dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/loginFrm"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_margin="@dimen/height_20"
+        android:layout_below="@id/logo"
+        android:background="@drawable/white_curve_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kukdudelivery.util.EEditText
+            android:textStyle="normal"
+            android:id="@+id/Mobile"
+            android:maxLength="10"
+            android:hint="Mobile No"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/login_edit_text_color"
+            android:textColor="@color/login_edit_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.kukdudelivery.util.EEditText
+                android:textStyle="normal"
+                android:id="@+id/Password"
+                android:layout_weight="0.3"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="Password"
+                android:textColorHint="@color/login_edit_text_color"
+                android:textColor="@color/login_edit_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/height_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.kukdudelivery.util.TTextView
+                android:id="@+id/btnForgotPassword"
+                android:textSize="@dimen/font_size_fourteen"
+                android:layout_marginLeft="@dimen/three_margin"
+                android:text="Forgot Password?"
+                android:textColor="#D82B2F"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.kukdudelivery.util.TTextView
+                android:layout_weight="1"
+                android:id="@+id/btnLoginwithOTP"
+                android:textSize="@dimen/font_size_fourteen"
+                android:layout_marginLeft="@dimen/three_margin"
+                android:text="Login using OTP"
+                android:textColor="#D82B2F"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.kukdudelivery.util.TTextView
+            android:textStyle="normal"
+            android:id="@+id/Login"
+            android:layout_marginTop="@dimen/height_10"
+            android:textSize="@dimen/font_size_sixteen"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_curve_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50" />
+    </LinearLayout>
+
+</RelativeLayout>

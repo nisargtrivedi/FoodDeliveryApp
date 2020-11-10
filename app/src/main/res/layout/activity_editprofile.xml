@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sv"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:padding="@dimen/twenty_margin"
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.kukdudelivery.util.TTextView
+            android:textColor="#222222"
+            android:textStyle="italic"
+            android:textSize="@dimen/font_size_seventeen"
+            android:text="Edit Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.TTextView
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtName"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="EMAIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtEmail"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="JOINING DATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtJoiningDate"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="EMERGENCY CONTACT NUMBER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtContactNo"
+            android:singleLine="true"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="ADHAR NO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtAdharNo"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="BLOOD GROUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtBloodGroup"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="DRIVING LICENSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtDrivingLicense"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="DRIVING LICENSE EXPIRY DATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtDrivingLicenseExpiry"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="VEHICLE TYPE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtVehicleType"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="VEHICLE NUMBER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.kukdudelivery.util.EEditText
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_fiften"
+            android:textColor="#717171"
+            android:id="@+id/edtVehicleNumber"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#717171"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll1"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/btnUpdate"
+        android:layout_below="@id/loading"
+        android:text="UPDATE"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@color/login_button_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50" />
+
+</RelativeLayout>
+</ScrollView>

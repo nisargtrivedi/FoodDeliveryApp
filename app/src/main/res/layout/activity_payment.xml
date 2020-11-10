@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/height_10"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/height_10"
+            android:drawableStart="@drawable/back_arrow"
+            android:drawablePadding="@dimen/height_10"
+            android:fontFamily="@font/arial_semi"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/height_10"
+            android:paddingEnd="0dp"
+            android:text="@string/payment"
+            android:textAllCaps="true"
+            android:textColor="#222222"
+            android:textSize="@dimen/font_size_fourteen" />
+
+        <TextView
+            android:id="@+id/tvPaytm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:drawableStart="@drawable/paytm_icon"
+            android:drawablePadding="@dimen/ten_margin"
+            android:fontFamily="@font/arial_semi"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/five_margin"
+            android:paddingEnd="0dp"
+            android:text="@string/paytm"
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_fourteen"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvGPay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:drawableStart="@drawable/googlepay_button_content"
+            android:drawablePadding="@dimen/ten_margin"
+            android:fontFamily="@font/arial_semi"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/five_margin"
+            android:paddingEnd="0dp"
+            android:text="@string/g_pay"
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_fourteen"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRazorPayy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:drawableStart="@drawable/razorpay"
+            android:drawablePadding="@dimen/ten_margin"
+            android:fontFamily="@font/arial_semi"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/five_margin"
+            android:paddingEnd="0dp"
+            android:text="@string/razor_pay"
+            android:textColor="#555555"
+            android:textSize="@dimen/font_size_fourteen"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

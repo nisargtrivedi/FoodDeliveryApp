@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginRight="@dimen/height_10"
+        android:drawableLeft="@drawable/back_arrow"
+        android:gravity="center"
+        android:paddingLeft="@dimen/height_10"
+        android:paddingRight="@dimen/height_10"
+        android:text="Search"
+        android:textSize="@dimen/font_size_thirteen"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/rlSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help"
+        android:layout_marginStart="@dimen/height_10"
+        android:layout_marginEnd="@dimen/height_10"
+        android:background="@drawable/edit_text_search">
+
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_toStartOf="@+id/imgSearch"
+            android:background="@null"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/height_10"
+            android:paddingRight="@dimen/height_10"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_thirteen" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/noorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlSearch"
+        android:gravity="center"
+        android:text="No Order Found"
+        android:textColor="@color/Order_no"
+        android:textSize="@dimen/font_size_sixteen"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvORders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlSearch"
+        android:layout_marginTop="@dimen/height_10">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kukdudelivery.util.TTextView
+        android:layout_marginLeft="@dimen/height_10"
+        android:text="MY ACCOUNT"
+        android:paddingLeft="@dimen/height_10"
+        android:id="@+id/asap"
+        android:layout_toLeftOf="@id/help"
+        android:textStyle="italic"
+        android:ellipsize="marquee"
+        android:textSize="@dimen/font_size_fourteen"
+        android:drawablePadding="@dimen/height_10"
+        android:textColor="#222222"
+        android:layout_marginTop="@dimen/height_10"
+        android:gravity="left|center"
+        android:drawableLeft="@drawable/back_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40" />
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/help"
+        android:paddingLeft="@dimen/five_margin"
+        android:paddingRight="@dimen/five_margin"
+        android:textStyle="italic"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/height_10"
+        android:gravity="center"
+        android:text="Logout"
+        android:layout_marginRight="@dimen/height_10"
+        android:textSize="@dimen/font_size_fourteen"
+        android:textColor="#D82B2F"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_40" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/height_10"
+        android:id="@+id/ll1"
+        android:paddingTop="@dimen/height_10"
+        android:background="#ffffff"
+        android:layout_below="@id/asap"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.kukdudelivery.util.TTextView
+                android:id="@+id/tvUserName"
+                android:textSize="@dimen/font_size_twelve"
+                android:layout_weight="0.4"
+                android:textColor="#555555"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textStyle="italic"
+                android:paddingLeft="@dimen/height_20"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.kukdudelivery.util.TTextView
+                android:id="@+id/tvEdit"
+                android:textSize="@dimen/font_size_thirteen"
+                android:layout_weight="1.6"
+                android:textColor="@color/login_button_color"
+                android:textStyle="italic"
+                android:paddingLeft="@dimen/height_20"
+                android:text="EDIT"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.kukdudelivery.util.TTextView
+                android:textSize="@dimen/font_size_twelve"
+                android:textColor="#777777"
+                android:singleLine="true"
+                android:textStyle="normal"
+                android:id="@+id/tvPhone"
+                android:paddingLeft="@dimen/height_20"
+                android:text="9090909090"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.kukdudelivery.util.TTextView
+                android:textSize="@dimen/font_size_twelve"
+                android:textColor="#777777"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:id="@+id/tvEmail"
+                android:textStyle="normal"
+                android:paddingLeft="@dimen/height_20"
+                android:text="shital@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginRight="@dimen/twenty_margin"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:background="#b6b6b6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <!--<com.kukdudelivery.Util.TTextView-->
+            <!--android:paddingRight="@dimen/height_10"-->
+            <!--android:id="@+id/TvManageAddress"-->
+            <!--android:drawableRight="@drawable/ic_right"-->
+            <!--android:text="Manage Address"-->
+            <!--android:textColor="#555555"-->
+            <!--android:textSize="@dimen/font_size_thirteen"-->
+            <!--android:textStyle="normal"-->
+            <!--android:gravity="center|left"-->
+            <!--android:drawablePadding="@dimen/ten_margin"-->
+            <!--android:paddingLeft="@dimen/twenty_margin"-->
+            <!--android:drawableLeft="@drawable/ic_account_home"-->
+            <!--android:layout_marginTop="@dimen/ten_margin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/height_30" />-->
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/tvChangePassword"
+            android:paddingRight="@dimen/height_10"
+            android:drawableRight="@drawable/ic_right"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="Change Password"
+            android:textColor="#555555"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/ten_margin"
+            android:paddingLeft="@dimen/twenty_margin"
+            android:drawableLeft="@drawable/ic_address_key"
+            android:layout_marginTop="@dimen/five_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30" />
+
+        <com.kukdudelivery.util.TTextView
+            android:visibility="gone"
+            android:paddingRight="@dimen/height_10"
+            android:textSize="@dimen/font_size_fiften"
+            android:text="Payment"
+            android:drawableRight="@drawable/ic_right"
+            android:textColor="#555555"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/ten_margin"
+            android:paddingLeft="@dimen/twenty_margin"
+            android:drawableLeft="@drawable/ic_payment"
+            android:layout_marginTop="@dimen/five_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30" />
+
+        <View
+            android:layout_marginRight="@dimen/twenty_margin"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:background="#b6b6b6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <com.kukdudelivery.util.TTextView
+            android:paddingRight="@dimen/height_10"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="Profile"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:drawablePadding="@dimen/ten_margin"
+            android:paddingLeft="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/five_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30" />
+        <View
+            android:layout_marginRight="@dimen/twenty_margin"
+            android:layout_marginLeft="@dimen/twenty_margin"
+            android:background="#b6b6b6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:stretchColumns="*"
+                android:layout_marginTop="@dimen/five_margin"
+                android:layout_marginRight="@dimen/height_20"
+                android:layout_marginLeft="@dimen/height_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Delivery ID"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:ellipsize="marquee"
+                        android:id="@+id/tvDeliveryID"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:text="Joining Date"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvJoiningDate"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:ellipsize="marquee"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Address"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvAddress"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#777777"
+                        android:text="0"
+                        android:ellipsize="marquee"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+                <TableRow android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="City"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvCity"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#777777"
+                        android:text="0"
+                        android:ellipsize="marquee"
+                        ></com.kukdudelivery.util.TTextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="State"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvState"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#777777"
+                        android:text="Gujarat"
+                        android:ellipsize="marquee"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:text="ZIP Code"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvZIP"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        android:ellipsize="marquee"
+                        ></com.kukdudelivery.util.TTextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Mobile"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvMobile"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:text="Blood Group"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:id="@+id/tvBloodGroup"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        android:ellipsize="marquee"
+                        ></com.kukdudelivery.util.TTextView>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Adhar No"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvAdharNo"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Vehicle Type"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvVehicleType"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="Vehicle Number"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvVehicleNumber"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="License Number"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvLicense"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="License Expiry Date"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvLicenseExpiry"
+                        android:textSize="@dimen/font_size_thirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="3"
+                        android:textColor="#777777"
+                        android:text="0"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+                    <com.kukdudelivery.util.TTextView
+                        android:id="@+id/tvDocs"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_sixteen"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:text="@string/click_here_to_show_documents"
+                        android:textColor="#555555"
+                        ></com.kukdudelivery.util.TTextView>
+
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+
+        <!--<com.kukdudelivery.Util.TTextView-->
+            <!--android:id="@+id/tvhelp"-->
+            <!--android:paddingRight="@dimen/height_10"-->
+            <!--android:textSize="@dimen/font_size_thirteen"-->
+            <!--android:text="Help"-->
+            <!--android:drawableRight="@drawable/ic_right"-->
+            <!--android:textColor="#555555"-->
+            <!--android:textStyle="normal"-->
+            <!--android:gravity="center|left"-->
+            <!--android:drawablePadding="@dimen/ten_margin"-->
+            <!--android:paddingLeft="@dimen/twenty_margin"-->
+            <!--android:drawableLeft="@drawable/ic_help"-->
+            <!--android:layout_marginTop="@dimen/five_margin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/height_30" />-->
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:src="@drawable/round_logo"
+        android:scaleType="fitXY"
+        android:translationZ="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-30dp"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_height="60dp"/>
+
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/bottom_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+</RelativeLayout>

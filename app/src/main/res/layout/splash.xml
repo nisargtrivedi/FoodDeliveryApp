@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         />
+    <com.kukdudelivery.util.TTextView
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_sixteen"
+        android:layout_marginTop="-40dp"
+        android:layout_below="@id/logo"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Fishchick Travelled For You"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

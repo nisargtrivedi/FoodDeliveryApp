@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/height_10">
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/OrderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_30"
+        android:layout_marginTop="@dimen/height_10"
+        android:background="@color/Order_cash"
+        android:gravity="center"
+        android:paddingLeft="@dimen/height_10"
+        android:paddingRight="@dimen/height_10"
+        android:text="PAID VIA CASH"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_thirteen"
+        android:textStyle="italic" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/OrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_40"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginRight="@dimen/height_10"
+        android:drawableLeft="@drawable/calendar_ic"
+        android:drawablePadding="@dimen/height_5"
+        android:gravity="center"
+        android:text="20march2019"
+        android:textColor="@color/Order_date"
+        android:textSize="@dimen/font_size_thirteen" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/OrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:paddingLeft="@dimen/height_10"
+        android:text="#123"
+        android:textColor="@color/Order_no"
+        android:textSize="@dimen/font_size_thirteen" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/OrderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderStatus"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:paddingLeft="@dimen/height_10"
+        android:text="250"
+        android:textColor="@color/Order_button"
+        android:textSize="@dimen/font_size_thirteen"
+        android:textStyle="bold" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/VendorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderNo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text="abc"
+        android:textColor="@color/Order_button"
+        android:textSize="@dimen/font_size_thirteen" />
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OrderAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginEnd="@dimen/height_10"
+        android:background="@color/Order_cash"
+        android:fontFamily="@font/arial_semi"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_twelve"
+        tools:text="area name" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/VendorAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VendorName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:drawableLeft="@drawable/location_ic"
+        android:drawablePadding="@dimen/height_5"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:text="abc"
+        android:textColor="@color/Order_address"
+        android:textSize="@dimen/font_size_eleven"
+        android:visibility="visible" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/VendorMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VendorAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:background="@drawable/ic_device"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/Order_address"
+        android:textSize="@dimen/font_size_eleven"
+        android:visibility="gone" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/VendorMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VendorAddress"
+        android:layout_marginTop="@dimen/height_5"
+        android:autoLink="phone"
+        android:drawableStart="@drawable/ic_call"
+        android:drawablePadding="@dimen/height_5"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:linksClickable="true"
+        android:minHeight="@dimen/height_30"
+        android:paddingStart="@dimen/height_10"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="abc"
+        android:textColor="#2E2E2E"
+        android:textColorLink="@color/link_color"
+        android:textSize="@dimen/font_size_ten"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/DeliverySlotTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VendorMobile"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text="Delivery Slot"
+        android:textColor="@color/Order_address"
+        android:textSize="@dimen/font_size_eleven" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/DeliverySlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VendorMobile"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:layout_toRightOf="@id/DeliverySlotTime"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text="Delivery Slot"
+        android:textColor="#2E2E2E"
+        android:textSize="@dimen/font_size_ten"
+        android:textStyle="bold" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/DeliveryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeliverySlot"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text="Delivery Status"
+        android:textColor="@color/Order_address"
+        android:textSize="@dimen/font_size_eleven" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeliverySlot"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginRight="@dimen/height_10"
+        android:layout_toRightOf="@id/DeliveryStatus"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/height_10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#2E2E2E"
+        android:textSize="@dimen/font_size_ten"
+        android:textStyle="bold" />
+
+    <com.kukdudelivery.util.TTextView
+        android:id="@+id/tvOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Status"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/height_5"
+        android:layout_marginEnd="@dimen/height_10"
+        android:singleLine="true"
+        android:text="Enter OTP to verify and Get customer details"
+        android:textColor="@color/Order_address"
+        android:textSize="@dimen/font_size_ten"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOtp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/pickOrder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginStart="@dimen/height_10"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_weight="0.3"
+            android:background="@color/Order_button"
+            android:gravity="center"
+            android:padding="@dimen/height_10"
+            android:text="@string/pick_order"
+            android:textColor="#fff"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <com.kukdudelivery.util.EEditText
+            android:id="@+id/edtOtp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginLeft="@dimen/height_5"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_marginRight="@dimen/height_5"
+            android:layout_weight="0.5"
+            android:background="@drawable/edit_text_"
+            android:digits="0123456789"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/enter_otp"
+            android:inputType="number"
+            android:paddingStart="@dimen/height_10"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_thirteen"
+            android:visibility="gone" />
+
+        <com.kukdudelivery.util.TTextView
+            android:id="@+id/btnVerify"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_marginEnd="@dimen/height_10"
+            android:layout_weight="0.2"
+            android:background="@color/Order_button"
+            android:gravity="center"
+            android:paddingLeft="@dimen/height_20"
+            android:paddingRight="@dimen/height_20"
+            android:text="@string/ok"
+            android:textColor="#fff"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.kukdudelivery.util.TTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_bottom"
+        android:layout_marginLeft="@dimen/height_20"
+        android:layout_marginTop="@dimen/height_20"
+        android:layout_marginRight="@dimen/height_20"
+        android:background="#C7C7C7" />
+</RelativeLayout>
